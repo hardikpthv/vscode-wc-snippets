@@ -1,4 +1,4 @@
-# Lit (html/Element and Webcomponents) Snippets for VS Code
+# Lit and Webcomponents Snippets for VS Code
 
 [![Version](https://vsmarketplacebadge.apphb.com/version/hardikpthv.litnwc.svg)](https://marketplace.visualstudio.com/items?itemName=hardikpthv.litnwc)
 [![Install](https://vsmarketplacebadge.apphb.com/installs/hardikpthv.litnwc.svg)](https://marketplace.visualstudio.com/items?itemName=hardikpthv.litnwc)
