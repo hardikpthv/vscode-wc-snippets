@@ -1,0 +1,197 @@
+{
+  "litComponent": {
+    "prefix": "lit-component",
+    "body": [
+      "import { LitElement, html, css } from 'lit-element';\n",
+      "class ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/g} extends LitElement {",
+      "\tstatic get styles() {",
+      "\t\treturn css`...`",
+      "\t}",
+      "\n\tstatic get properties() {",
+      "\t\treturn { ${2:prop}: ${3:propType} };",
+      "\t}",
+      "\n\t// Implement `render` to define a template for your element.",
+      "\trender() {",
+      "\t\treturn html`${4:template}`",
+      "\t}",
+      "}",
+      "customElements.define('${TM_FILENAME_BASE/(.*)/${1:/downcase}/g}', ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/g});"
+    ],
+    "description": "Basic Lit component"
+  },
+  "litComponentDecorator": {
+    "prefix": "lit-component-decorator",
+    "body": [
+      "import { LitElement, html, css, customElement, property } from 'lit-element';\n",
+      "@customElement('${TM_FILENAME_BASE/(.*)/${1:/downcase}/g}');",
+      "class ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/g} extends LitElement {\n",
+      "\t@property({type : ${3:propType}) ${1:propName} = ${2:propValue}",
+      "\tstatic get styles() {",
+      "\t\treturn css`...`",
+      "\t}",
+      "\n\t// Implement `render` to define a template for your element.",
+      "\trender() {",
+      "\t\treturn html`${4:template}`",
+      "\t}",
+      "}"
+    ],
+    "description": "Basic Lit component using decorator"
+  },
+  "litRender": {
+    "prefix": "lit-render",
+    "body": ["\trender() {", "\t\treturn html`${1:template}`", "\t}"],
+    "description": "render() method from LitElement"
+  },
+  "litProps": {
+    "prefix": "lit-props",
+    "body": [
+      "static get properties() {",
+      "\treturn { ${1:prop}: ${2:propType} };",
+      "}"
+    ],
+    "description": "properties() method from LitElement"
+  },
+  "litPropsDecorator": {
+    "prefix": "lit-props-decorator",
+    "body": ["@property({type : ${3:propType}) ${1:propName} = ${2:propValue}"],
+    "description": "@property decorator from LitElement"
+  },
+  "litStyles": {
+    "prefix": "lit-styles",
+    "body": ["static get styles() {", "\treturn css`...`", "}"],
+    "description": "styles() method from LitElement"
+  },
+  "litCeDecorator": {
+    "prefix": "lit-ce-decorator",
+    "body": ["@customElement('${TM_FILENAME_BASE/(.*)/${1:/downcase}/g}')"],
+    "description": "@customElement decorator from LitElement"
+  },
+  "litCtor": {
+    "prefix": "lit-ctor",
+    "body": ["constructor() {", "\tsuper()", "\t//${1:implementation}", "}"],
+    "description": "Add constructor()"
+  },
+  "litconnectedCallback": {
+    "prefix": "lit-cb",
+    "body": [
+      "connectedCallback() {",
+      "\tsuper.connectedCallback()",
+      "\t//${1:implementation}",
+      "}"
+    ],
+    "description": "connectedCallback() from LitElement"
+  },
+  "litdisconnectedCallback": {
+    "prefix": "lit-dcb",
+    "body": ["disconnectedCallback() {", "\t//${1:implementation}", "}"],
+    "description": "disconnectedCallback() from LitElement"
+  },
+  "litfirstUpdated": {
+    "prefix": "lit-first-updated",
+    "body": ["firstUpdated(changedProps) {", "\t//${1:implementation}", "}"],
+    "description": "firstUpdated() from LitElement"
+  },
+  "litUpdated": {
+    "prefix": "lit-updated",
+    "body": ["updated(changedProps) {", "\t//${1:implementation}", "}"],
+    "description": "updated() from LitElement"
+  },
+  "litCustomEvent": {
+    "prefix": "lit-ce",
+    "body": [
+      "const ${1/(.*)/${1:/pascalcase}/g} = new CustomEvent('${1:eventName}', { ",
+      "\tdetail: { message: 'my-event happened.' },",
+      "\tbubbles: true, ",
+      "\tcomposed: true",
+      "});"
+    ],
+    "description": "Create the custom event"
+  },
+  "litConditionalTemplate": {
+    "prefix": "lit-conditional-template",
+    "body": [
+      "const ${4:templateName} = html`",
+      "\t${${1:condition}",
+      "\t\t? html`",
+      "\t\t\t\t${2:template}",
+      "\t\t\t`",
+      "\t\t: html`",
+      "\t\t\t\t${3:template}",
+      "\t\t\t`",
+      "\t}",
+      "`;"
+    ],
+    "description": "Create conditional template expression"
+  },
+  "litTemplatesLoop": {
+    "prefix": "lit-tmpl-loop",
+    "body": [
+      "${1:collection}.map(",
+      "\t(${2:item}) => ",
+      "\t\thtml`",
+      "\t\t\t${2}",
+      "\t\t`",
+      ");"
+    ],
+    "description": "Iterate templates through map()"
+  },
+  "litStyleMap": {
+    "prefix": "lit-style",
+    "body": ["style=${styleMap(${1:style1}, ${2:style2}, ${3:style3})}"],
+    "description": "Add `styleMap()` to the element. Import it from `lit-element` or `lit-html`"
+  },
+  "litClasseMap": {
+    "prefix": "lit-class",
+    "body": ["class=${classMap(${1:class1}, ${2:class2}, ${3:class3})}"],
+    "description": "Add `classMap()` to the element. Import it from `lit-element` or `lit-html`"
+  },
+  "wComponent": {
+    "prefix": "wc",
+    "body": [
+      "class ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/g} extends HTMLElement {",
+      "\tconstructor() {",
+      "\t\tsuper();",
+      "\t\t//${1:implementation}",
+      "\t}\n",
+      "\tconnectedCallback() {",
+      "\t\t//${1:implementation}",
+      "\t}\n",
+      "\tdisconnectedCallback() {",
+      "\t\t//${1:implementation}",
+      "\t}\n",
+      "\tattributeChangedCallback(name, oldVal, newVal) {",
+      "\t\t//${1:implementation}",
+      "\t}\n",
+      "\tadoptedCallback() {",
+      "\t\t//${1:implementation}",
+      "\t}\n",
+      "}",
+      "",
+      "window.customElements.define('${TM_FILENAME_BASE/(.*)/${1:/downcase}/g}', ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/g});"
+    ],
+    "description": "Basic Web Component"
+  },
+  "wcObservedAttributes": {
+    "prefix": "wc-observed-attrs",
+    "body": [
+      "static get observedAttributes() {",
+      "\treturn ['${1:attrName}'];",
+      "}"
+    ],
+    "description": "Define `observedAttributes`"
+  },
+  "wcAdoptedCallback": {
+    "prefix": "wc-adopted-cb",
+    "body": ["static get adoptedCallback() {", "\t//${1:implementation}", "}"],
+    "description": "Define `adoptedCallback`"
+  },
+  "wcAttributeChangedCallback": {
+    "prefix": "wc-attribute-changed-cb",
+    "body": [
+      "attributeChangedCallback(name, oldVal, newVal) {",
+      "\t//${1:implementation}",
+      "}"
+    ],
+    "description": "Define `attributeChangedCallback`"
+  }
+}
