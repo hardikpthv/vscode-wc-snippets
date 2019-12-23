@@ -1,3 +1,7 @@
+<p align="center">
+  <img width="100" src="images/logo.png">
+</p>
+
 # Lit and Webcomponents Snippets for VS Code
 
 [![Version](https://vsmarketplacebadge.apphb.com/version/hardikpthv.litnwc.svg)](https://marketplace.visualstudio.com/items?itemName=hardikpthv.litnwc)
