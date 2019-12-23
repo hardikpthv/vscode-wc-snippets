@@ -47,9 +47,12 @@ Start typing `lit-*` and hit `enter`, the snippet spreads out.
 
 ### Web Components Snippets
 
-| Snippet | Purpose |
-| ------- | ------- |
-
+| Snippet                   | Purpose                           |
+| ------------------------- | --------------------------------- |
+| `wc`                      | Basic Web Component               |
+| `wc-observed-attrs`       | Define `observedAttributes`       |
+| `wc-adopted-cb`           | Define `adoptedCallback`          |
+| `wc-attribute-changed-cb` | Define `attributeChangedCallback` |
 
 ### Using NgRx or Angualr material
 
