@@ -5,10 +5,10 @@
   "version": "0.0.1",
   "publisher": "hardikpthv",
   "license": "MIT",
-  "icon": "images/angular.png",
+  "icon": "images/logo.png",
   "galleryBanner": {
-    "color": "#3f51b5",
-    "theme": "dark"
+    "color": "#eff1f3",
+    "theme": "light"
   },
   "homepage": "https://github.com/hardikpthv/vscode-lit-snippets/blob/master/README.md",
   "bugs": {
