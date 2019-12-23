@@ -2,7 +2,7 @@
   "litComponent": {
     "prefix": "lit-component",
     "body": [
-      "import { LitElement, html, css } from 'lit-element';",
+      "import { LitElement, html, css } from 'lit-element';\n",
       "class ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/g} extends LitElement {",
       "\tstatic get styles() {",
       "\t\treturn css`...`",
@@ -10,8 +10,8 @@
       "\n\tstatic get properties() {",
       "\t\treturn { ${2:prop}: ${3:propType} };",
       "\t}",
-      "\t// Implement `render` to define a template for your element.\n",
-      "\n\trender() {",
+      "\n\t// Implement `render` to define a template for your element.",
+      "\trender() {",
       "\t\treturn html`${4:template}`",
       "\t}",
       "}",
@@ -29,8 +29,8 @@
       "\tstatic get styles() {",
       "\t\treturn css`...`",
       "\t}",
-      "\t// Implement `render` to define a template for your element.\n",
-      "\n\trender() {",
+      "\n\t// Implement `render` to define a template for your element.",
+      "\trender() {",
       "\t\treturn html`${4:template}`",
       "\t}",
       "}"
