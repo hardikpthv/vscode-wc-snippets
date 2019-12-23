@@ -1,7 +1,7 @@
 {
   "name": "litnwc",
-  "displayName": "Lit(Element and html) and Webcomponents snippets",
-  "description": "Lit and Webcomponent with HTML and JS snippets",
+  "displayName": "Lit and Webcomponents snippets",
+  "description": "LitElement, lit-html, and Webcomponent with HTML and JS snippets",
   "version": "0.0.1",
   "publisher": "hardikpthv",
   "license": "MIT",
