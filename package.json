@@ -1,0 +1,41 @@
+{
+  "name": "litnwc",
+  "displayName": "Lit(Element and html) and Webcomponents snippets",
+  "description": "Lit and Webcomponent with HTML and JS snippets",
+  "version": "0.0.1",
+  "publisher": "hardikpthv",
+  "license": "MIT",
+  "icon": "images/angular.png",
+  "galleryBanner": {
+    "color": "#3f51b5",
+    "theme": "dark"
+  },
+  "homepage": "https://github.com/hardikpthv/vscode-lit-snippets/blob/master/README.md",
+  "bugs": {
+    "url": "https://github.com/hardikpthv/vscode-lit-snippets/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hardikpthv/vscode-lit-snippets.git"
+  },
+  "keywords": [
+    "lit-html",
+    "LitElement",
+    "Web component",
+    "element"
+  ],
+  "engines": {
+    "vscode": "^1.10.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/javascript.json"
+      }
+    ]
+  }
+}
