@@ -10,6 +10,6 @@ jobs:
         with:
           node-version: 10.x
       - name: Publish package
-        run:
+        run: |
           yarn
           yarn vsce publish $GITHUB_REF -p ${{secrets.PUBLISHER_TOKEN}}        
