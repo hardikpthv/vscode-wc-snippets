@@ -14,4 +14,4 @@ jobs:
       - name: Publish package
         run: |
           yarn
-          echo vsce publish $(git describe --tags) -p ${{secrets.PUBLISHER_TOKEN}}        
+          echo vsce publish ${GITHUB_REF##*/} -p ${{secrets.PUBLISHER_TOKEN}}
