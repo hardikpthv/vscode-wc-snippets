@@ -1,13 +1,13 @@
 {
-  "name": "litnwc",
+  "name": "LitSnippets",
   "displayName": "Lit and Web Components snippets",
-  "description": "LitElement, lit-html, and Webcomponent with HTML and JS snippets",
-  "version": "0.0.1",
+  "description": "LitElement, lit-html, and Web Components with HTML and JS snippets",
+  "version": "1.0.0",
   "publisher": "hardikpthv",
   "license": "MIT",
   "icon": "images/logo.png",
   "galleryBanner": {
-    "color": "#eff1f3",
+    "color": "#e4ebad",
     "theme": "light"
   },
   "homepage": "https://github.com/hardikpthv/vscode-lit-snippets/blob/master/README.md",
