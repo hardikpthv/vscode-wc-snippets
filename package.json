@@ -37,5 +37,8 @@
         "path": "./snippets/javascript.json"
       }
     ]
+  },
+  "devDependencies": {
+    "vsce": "^1.71.0"
   }
 }
