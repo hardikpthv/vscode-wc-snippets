@@ -4,9 +4,6 @@
 
 # Lit and Web Components Snippets for VS Code
 
-[![Version](https://vsmarketplacebadge.apphb.com/version/hardikpthv.litnwc.svg)](https://marketplace.visualstudio.com/items?itemName=hardikpthv.litnwc)
-[![Install](https://vsmarketplacebadge.apphb.com/installs/hardikpthv.litnwc.svg)](https://marketplace.visualstudio.com/items?itemName=hardikpthv.litnwc)
-[![Ratings](https://vsmarketplacebadge.apphb.com/rating-short/hardikpthv.litnwc.svg)](https://marketplace.visualstudio.com/items?itemName=hardikpthv.litnwc)
 [![made-for-VSCode](https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg)](https://code.visualstudio.com/)
 
 This extension for Visual Studio Code adds snippets of HTML and Javascript for [LitElement](https://lit-element.polymer-project.org), [lit-html](https://lit-html.polymer-project.org), and [Web components](https://www.webcomponents.org/introduction).
