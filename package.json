@@ -2,7 +2,7 @@
   "name": "LitSnippets",
   "displayName": "Lit and Web Components snippets",
   "description": "LitElement, lit-html, and Web Components with HTML and JS snippets",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "publisher": "hardikpthv",
   "license": "MIT",
   "icon": "images/logo.png",
