@@ -1,5 +1,8 @@
 name: Publish the extension
-on: [push]
+on: 
+  push:    
+    tags:
+      - '*'
 jobs:
   run:
     runs-on: ubuntu-latest
