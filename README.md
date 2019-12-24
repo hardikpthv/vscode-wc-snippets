@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="100" src="images/logo.png">
+  <img width="100" src="https://raw.githubusercontent.com/hardikpthv/vscode-lit-snippets/master/images/logo.png">
 </p>
 
 # Lit and Web Components Snippets for VS Code
