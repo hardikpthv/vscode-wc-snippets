@@ -2,7 +2,7 @@
   "name": "litnwc",
   "displayName": "Lit and Web Components snippets",
   "description": "LitElement, lit-html, and Webcomponent with HTML and JS snippets",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "publisher": "hardikpthv",
   "license": "MIT",
   "icon": "images/logo.png",
@@ -34,7 +34,11 @@
     "snippets": [
       {
         "language": "javascript",
-        "path": "./snippets/javascript.json"
+        "path": "./snippets/common.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/common.json"
       }
     ]
   }
