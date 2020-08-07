@@ -16,7 +16,7 @@ Have a look at [CHANGELOG](CHANGELOG.md) for the latest changes
 1.  Launch VS Code
 1.  Hit `Cmd`-`Shift`-`P` (macOS) or `Ctrl`-`Shift`-`P` (Windows, Linux)
 1.  Select `Install Extension`
-1.  Choose the extension `Lit and Webcomponents snippets`
+1.  Choose the extension `Lit and Web Components snippets`
 1.  Reload Visual Studio Code
 
 ## Usage
@@ -55,7 +55,7 @@ Start typing `lit-*` and hit `enter`, the snippet spreads out or e.g. `lit-compo
 | `wc-adopted-cb`           | Define `adoptedCallback`          |
 | `wc-attribute-changed-cb` | Define `attributeChangedCallback` |
 
-### Using NgRx or Angualr material
+### Using NgRx or Angular material
 
 - Check out [NgRx Snippets](https://bit.ly/ngrx-vscode)
 - Check out [Angular Material Snippets](https://bit.ly/ng-material-vscode)
