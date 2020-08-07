@@ -21,6 +21,8 @@
   "keywords": [
     "lit-html",
     "LitElement",
+    "stencil",
+    "js",
     "Web component",
     "element"
   ],
