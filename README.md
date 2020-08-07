@@ -55,7 +55,7 @@ Start typing `lit-*` and hit `enter`, the snippet spreads out or e.g. `lit-compo
 | `wc-adopted-cb`           | Define `adoptedCallback`          |
 | `wc-attribute-changed-cb` | Define `attributeChangedCallback` |
 
-### Using NgRx or Angualr material
+### Using NgRx or Angular material
 
 - Check out [NgRx Snippets](https://bit.ly/ngrx-vscode)
 - Check out [Angular Material Snippets](https://bit.ly/ng-material-vscode)
