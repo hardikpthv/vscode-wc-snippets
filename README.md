@@ -6,7 +6,7 @@
 
 [![made-for-VSCode](https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg)](https://code.visualstudio.com/)
 
-This extension for Visual Studio Code adds snippets of HTML and Javascript for [LitElement](https://lit-element.polymer-project.org), [lit-html](https://lit-html.polymer-project.org), and [Web components](https://www.webcomponents.org/introduction).
+This extension for Visual Studio Code adds snippets of HTML and Javascript for [LitElement](https://lit-element.polymer-project.org), [lit-html](https://lit-html.polymer-project.org), [Stencil](https://stenciljs.com/) and [Web components](https://www.webcomponents.org/introduction).
 
 Have a look at [CHANGELOG](CHANGELOG.md) for the latest changes
 
@@ -27,24 +27,45 @@ Start typing `lit-*` and hit `enter`, the snippet spreads out or e.g. `lit-compo
 
 ### LitElement and lit-html Snippets
 
-| Snippet                    | Purpose                                     |
-| -------------------------- | ------------------------------------------- |
-| `lit-component`            | Basic Lit component                         |
-| `lit-component-decorator`  | Basic Lit component using decorator         |
-| `lit-render`               | `render()`                                  |
-| `lit-props`                | `properties()`                              |
-| `lit-props-decorator`      | `@property` decorator                       |
-| `lit-styles`               | `styles()`                                  |
-| `lit-ctor`                 | Add `constructor()`                         |
-| `lit-cb`                   | `connectedCallback()` life cycle method     |
-| `lit-dcb`                  | `disconnectedCallback()`life cycle method   |
-| `lit-first-updated`        | `firstUpdated()`life cycle method           |
-| `lit-updated`              | `updated()`life cycle method                |
-| `lit-ce`                   | Create the custom event using `CustomEvent` |
-| `lit-conditional-template` | Create conditional template expression      |
-| `lit-tmpl-loop`            | Iterate templates through `map()`           |
-| `lit-style`                | Add `styleMap()` to the element             |
-| `lit-class`                | Add `classMap()` to the element             |
+| Snippet                    | Purpose                                                                         |
+| -------------------------- | ------------------------------------------------------------------------------- |
+| `lit-component`            | Basic Lit component                                                             |
+| `lit-component-decorator`  | Basic Lit component using decorator                                             |
+| `lit-render`               | `render()`                                                                      |
+| `lit-props`                | `properties()`                                                                  |
+| `lit-props-decorator`      | `@property` decorator                                                           |
+| `lit-styles`               | `styles()`                                                                      |
+| `lit-ctor`                 | Add `constructor()`                                                             |
+| `lit-cb`                   | `connectedCallback()` life cycle method                                         |
+| `lit-dcb`                  | `disconnectedCallback()`life cycle method                                       |
+| `lit-first-updated`        | `firstUpdated()`life cycle method                                               |
+| `lit-updated`              | `updated()`life cycle method                                                    |
+| `lit-ce`                   | Create the custom event using `CustomEvent`                                     |
+| `lit-conditional-template` | Create conditional template expression                                          |
+| `lit-tmpl-loop`            | Iterate templates through `map()`                                               |
+| `lit-style`                | Add `styleMap()` to the element                                                 |
+| `lit-class`                | Add `classMap()` to the element                                                 |
+| `lit-should-update`        | Implement `shouldUpdate` life cycle hook                                        |
+| `lit-test-open-wc`         | Test case based on [@open-wc](https://open-wc.org/testing/testing-helpers.html) |
+
+### Stencil Snippets
+
+| Snippet                         | Purpose                                                       |
+| ------------------------------- | ------------------------------------------------------------- |
+| `stencil-component`             | Stencil component                                             |
+| `stencil-functional-component`  | Stencil functional component                                  |
+| `stencil-prop`                  | `@Prop` decorator from Stencil                                |
+| `stencil-element`               | `@Element` decorator from Stencil                             |
+| `stencil-event`                 | `@Event` decorator from Stencil                               |
+| `stencil-method-async`          | `@Method`(async) decorator from `@stencil/core`               |
+| `stencil-method-promise`        | `@Method` decorator as returning promise from `@stencil/core` |
+| `stencil-component-will-load`   | `@componentWillLoad` life cycle hook                          |
+| `stencil-component-did-load`    | `@componentDidLoad` life cycle hook                           |
+| `stencil-component-will-render` | `@componentWillRender` life cycle hook                        |
+| `stencil-component-did-render`  | `@componentDidRender` life cycle hook                         |
+| `stencil-component-will-update` | `@componentWillUpdate` life cycle hook                        |
+| `stencil-cb`                    | `connectedCallback()` from Stencil                            |
+| `stencil-dcb`                   | `disconnectedCallback()` from Stencil                         |
 
 ### Web Components Snippets
 
@@ -55,7 +76,7 @@ Start typing `lit-*` and hit `enter`, the snippet spreads out or e.g. `lit-compo
 | `wc-adopted-cb`           | Define `adoptedCallback`          |
 | `wc-attribute-changed-cb` | Define `attributeChangedCallback` |
 
-### Using NgRx or Angular material
+## Using NgRx or Angular material
 
 - Check out [NgRx Snippets](https://bit.ly/ngrx-vscode)
 - Check out [Angular Material Snippets](https://bit.ly/ng-material-vscode)

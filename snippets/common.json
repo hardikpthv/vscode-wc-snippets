@@ -84,17 +84,17 @@
   },
   "litdisconnectedCallback": {
     "prefix": "lit-dcb",
-    "body": ["disconnectedCallback() {", "\t//${1:implementation}", "}"],
+    "body": ["disconnectedCallback() {", "\t${1://implementation}", "}"],
     "description": "disconnectedCallback() from LitElement"
   },
   "litfirstUpdated": {
     "prefix": "lit-first-updated",
-    "body": ["firstUpdated(changedProps) {", "\t//${1:implementation}", "}"],
+    "body": ["firstUpdated(changedProps) {", "\t${1://implementation}", "}"],
     "description": "firstUpdated() from LitElement"
   },
   "litUpdated": {
     "prefix": "lit-updated",
-    "body": ["updated(changedProps) {", "\t//${1:implementation}", "}"],
+    "body": ["updated(changedProps) {", "\t${1://implementation}", "}"],
     "description": "updated() from LitElement"
   },
   "litCustomEvent": {
@@ -228,5 +228,109 @@
       "}"
     ],
     "description": "Define `attributeChangedCallback`"
+  },
+  "stencilComponent": {
+    "prefix": "stencil-component",
+    "body": [
+      "import { Component, Prop, h } from '@stencil/core';\n",
+      "@Component({",
+      "\ttag: '${TM_FILENAME_BASE/(.*)/${1:/downcase}/g}',",
+      "\tstyleUrl: '${TM_FILENAME_BASE/(.*)/${1:/downcase}/g}.css',",
+      "})",
+      "export class ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/g}Component {",
+      "\t@Prop() ${1:propName}:${2:propType}\n",
+      "\trender() {",
+      "\t\treturn (",
+      "\t\t\t<p>",
+      "\t\t\t\t${3://content}",
+      "\t\t\t</p>",
+      "\t\t);",
+      "\t}",
+      "}"
+    ],
+    "description": "Stencil Component"
+  },
+  "stencilFunctionalComponent": {
+    "prefix": "stencil-functional-component",
+    "body": [
+      "import { FunctionalComponent, Prop, h } from '@stencil/core';\n",
+      "interface ${1:entity}Props {",
+      "\t${2://props}",
+      "}\n",
+      "export const ${1}: FunctionalComponent<${1}Props> = (${3:args}) => (",
+      "\t${4://template}",
+      ");"
+    ],
+    "description": "Stencil Functional Component"
+  },
+  "stencilProperty": {
+    "prefix": "stencil-prop",
+    "body": ["@Prop() ${1:propName}:${2:propType};"],
+    "description": "@Prop decorator from Stencil"
+  },
+  "stencilElement": {
+    "prefix": "stencil-element",
+    "body": ["@Element() ${1:elementName}:HTMLElement;"],
+    "description": "@Element decorator from `@stencil/core`"
+  },
+  "stencilEvent": {
+    "prefix": "stencil-event",
+    "body": ["@Event() ${1:eventName}:EventEmitter<${2:eventType}>;"],
+    "description": "@Event decorator from `@stencil/core`"
+  },
+  "stencilMethodAsync": {
+    "prefix": "stencil-method-async",
+    "body": [
+      "@Method()",
+      "async ${1:methodName}() {",
+      "\t${2://implementation}",
+      "}"
+    ],
+    "description": "@Method(async) decorator from `@stencil/core`"
+  },
+  "stencilMethodPromise": {
+    "prefix": "stencil-method-promise",
+    "body": ["@Method()", "${1:methodName}() {", "\t$return {2:Promise}", "}"],
+    "description": "@Method decorator as returning promise from `@stencil/core`"
+  },
+  "stencilCompWillLoad": {
+    "prefix": "stencil-component-will-load",
+    "body": ["componentWillLoad() {", "\t${1://implementation}", "}"],
+    "description": "componentWillLoad life cycle hook"
+  },
+  "stencilCompDidLoad": {
+    "prefix": "stencil-component-did-load",
+    "body": ["componentDidLoad() {", "\t${1://implementation}", "}"],
+    "description": "componentDidLoad life cycle hook"
+  },
+  "stencilCompWillRender": {
+    "prefix": "stencil-component-will-render",
+    "body": ["componentWillRender() {", "\t${1://implementation}", "}"],
+    "description": "componentWillRender life cycle hook"
+  },
+  "stencilCompDidRender": {
+    "prefix": "stencil-component-did-render",
+    "body": ["componentDidRender() {", "\t${1://implementation}", "}"],
+    "description": "componentDidRender life cycle hook"
+  },
+  "stencilCompWillUpdate": {
+    "prefix": "stencil-component-will-update",
+    "body": ["componentWillUpdate() {", "\t${1://implementation}", "}"],
+    "description": "componentWillUpdate life cycle hook"
+  },
+  "stencilCompDidUpdate": {
+    "prefix": "stencil-component-did-update",
+    "body": ["componentDidUpdate() {", "\t${1://implementation}", "}"],
+    "description": "componentDidUpdate life cycle hook"
+  },
+  "stencilConnectedCallback": {
+    "prefix": "stencil-cb",
+    "body": ["connectedCallback() {", "\t${1://implementation}", "}"],
+    "description": "connectedCallback() from Stencil"
+  },
+  "stencilDisconnectedCallback": {
+    "prefix": "stencil-dcb",
+    "body": ["disconnectedCallback() {", "\t${1://implementation}", "}"],
+    "description": "disconnectedCallback() from Stencil"
   }
 }
