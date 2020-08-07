@@ -9,8 +9,7 @@
       "\t}",
       "\n\tstatic get properties() {",
       "\t\treturn { ${2:prop}: ${3:propType} };",
-      "\t}",
-      "\n\t// Implement `render` to define a template for your element.",
+      "\t}\n",
       "\trender() {",
       "\t\treturn html`${4:template}`",
       "\t}",
@@ -23,9 +22,9 @@
     "prefix": "lit-component-decorator",
     "body": [
       "import { LitElement, html, css, customElement, property } from 'lit-element';\n",
-      "@customElement('${TM_FILENAME_BASE/(.*)/${1:/downcase}/g}');",
+      "@customElement('${TM_FILENAME_BASE/(.*)/${1:/downcase}/g}')",
       "class ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/g} extends LitElement {\n",
-      "\t@property({type : ${3:propType}) ${1:propName} = ${2:propValue}",
+      "\t@property({type : ${3:propType}}) ${1:propName} = ${2:propValue}\n",
       "\tstatic get styles() {",
       "\t\treturn css`...`",
       "\t}",
@@ -53,7 +52,9 @@
   },
   "litPropsDecorator": {
     "prefix": "lit-props-decorator",
-    "body": ["@property({type : ${3:propType}) ${1:propName} = ${2:propValue}"],
+    "body": [
+      "@property({type : ${3:propType}}) ${1:propName} = ${2:propValue}"
+    ],
     "description": "@property decorator from LitElement"
   },
   "litStyles": {
@@ -144,6 +145,40 @@
     "prefix": "lit-class",
     "body": ["class=${classMap(${1:class1}, ${2:class2}, ${3:class3})}"],
     "description": "Add `classMap()` to the element. Import it from `lit-element` or `lit-html`"
+  },
+  "litShouldUpdate": {
+    "prefix": "lit-should-update",
+    "body": [
+      "shouldUpdate(changedProperties) {",
+      "\tchangedProperties.forEach((oldValue, propName) => {",
+      "\t\t${2:// implement logic}",
+      "\t});",
+      "\treturn changedProperties.has(${1:propName});",
+      "}"
+    ],
+    "description": "Implement `shouldUpdate` life cycle hook"
+  },
+  "litTestCase": {
+    "prefix": "lit-test-open-wc",
+    "body": [
+      "import { litFixture, expect } from '@open-wc/testing';",
+      "import {  html } from 'lit-element';\n",
+      "import '../${1:component-file-name}';\n",
+      "describe('${2:component-name}', () => {",
+      "\tconst fixture;\n",
+      "\tbeforeEach(async () => {",
+      "\t\tfixture = await litFixture(html`<${2}></${2}>`);",
+      "\t});\n",
+      "\tit('should render correctly', () => {",
+      "\t\texpect(fixture.localName).to.be.equal('${2}');",
+      "\t\texpect(fixture).shadowDom.to.equalSnapshot();",
+      "\t});\n",
+      "\tit('is a11y AXE accessible', async () => {",
+      "\t\tawait expect(fixture).to.be.accessible();",
+      "\t});",
+      "});"
+    ],
+    "description": "Test case based on @open-wc"
   },
   "wComponent": {
     "prefix": "wc",

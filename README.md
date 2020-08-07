@@ -16,7 +16,7 @@ Have a look at [CHANGELOG](CHANGELOG.md) for the latest changes
 1.  Launch VS Code
 1.  Hit `Cmd`-`Shift`-`P` (macOS) or `Ctrl`-`Shift`-`P` (Windows, Linux)
 1.  Select `Install Extension`
-1.  Choose the extension `Lit and Webcomponents snippets`
+1.  Choose the extension `Lit and Web Components snippets`
 1.  Reload Visual Studio Code
 
 ## Usage
