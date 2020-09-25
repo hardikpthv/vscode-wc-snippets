@@ -1,7 +1,7 @@
 {
   "name": "lit-snippets",
-  "displayName": "Lit and Web Components snippets",
-  "description": "LitElement, lit-html, and Webcomponent with HTML and JS snippets",
+  "displayName": "Web Components Snippets",
+  "description": "LitElement, lit-html, Stencil, FASTElement and WebComponent with HTML and JS snippets",
   "version": "2.0.0",
   "publisher": "hardikpthv",
   "license": "MIT",
@@ -21,6 +21,7 @@
   "keywords": [
     "lit-html",
     "LitElement",
+    "FASTElement",
     "stencil",
     "js",
     "Web component",
