@@ -2,11 +2,15 @@
   <img width="100" src="https://raw.githubusercontent.com/hardikpthv/vscode-lit-snippets/master/images/logo.png">
 </p>
 
-# Lit and Web Components Snippets for VS Code
+# Web Components Snippets for VS Code
 
 [![made-for-VSCode](https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg)](https://code.visualstudio.com/)
+[![Version](https://vsmarketplacebadge.apphb.com/version/hardikpthv.lit-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=hardikpthv.lit-snippets)
+[![Install](https://vsmarketplacebadge.apphb.com/installs/hardikpthv.lit-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=hardikpthv.lit-snippets)
+[![Downloads](https://vsmarketplacebadge.apphb.com/downloads-short/hardikpthv.lit-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=hardikpthv.lit-snippets)
+[![Ratings](https://vsmarketplacebadge.apphb.com/rating-short/hardikpthv.lit-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=hardikpthv.lit-snippets)
 
-This extension for Visual Studio Code adds snippets of HTML and Javascript for [LitElement](https://lit-element.polymer-project.org), [lit-html](https://lit-html.polymer-project.org), [Stencil](https://stenciljs.com/) and [Web components](https://www.webcomponents.org/introduction).
+This extension for Visual Studio Code adds snippets of HTML and Javascript for [LitElement](https://lit-element.polymer-project.org), [lit-html](https://lit-html.polymer-project.org), [Stencil](https://stenciljs.com/), [FASTElement](https://www.fast.design/docs/fast-element/getting-started◊) and [Web components](https://www.webcomponents.org/introduction).
 
 Have a look at [CHANGELOG](CHANGELOG.md) for the latest changes
 
@@ -67,6 +71,20 @@ Start typing `lit-*` and hit `enter`, the snippet spreads out or e.g. `lit-compo
 | `stencil-cb`                    | `connectedCallback()` from Stencil                            |
 | `stencil-dcb`                   | `disconnectedCallback()` from Stencil                         |
 
+### FASTElement Snippets
+
+| Snippet                  | Purpose                                   |
+| ------------------------ | ----------------------------------------- |
+| `fast-component`         | Basic FASTElement Component               |
+| `fast-cb`                | `connectedCallback()` from FASTElement    |
+| `fast-dcb`               | `disconnectedCallback()` from FASTElement |
+| `fast-attr`              | `@attr` decorator                         |
+| `fast-observable`        | `@observable` decorator                   |
+| `fast-observable-notify` | `Observable.notify(...)`                  |
+| `fast-observable-track`  | `Observable.track(...)`                   |
+| `fast-dispatch`          | `$emit` to dispatch the custom event      |
+| `fast-when`              | `when`for conditional rendering           |
+
 ### Web Components Snippets
 
 | Snippet                   | Purpose                           |
@@ -75,8 +93,11 @@ Start typing `lit-*` and hit `enter`, the snippet spreads out or e.g. `lit-compo
 | `wc-observed-attrs`       | Define `observedAttributes`       |
 | `wc-adopted-cb`           | Define `adoptedCallback`          |
 | `wc-attribute-changed-cb` | Define `attributeChangedCallback` |
+| `wc-slot`                 | Define `<slot>`                   |
+| `wc-slot-named`           | Define `<slot name="name">`       |
 
-## Using NgRx or Angular material
+## Using NgRx or Angular material 🤔
 
-- Check out [NgRx Snippets](https://bit.ly/ngrx-vscode)
-- Check out [Angular Material Snippets](https://bit.ly/ng-material-vscode)
+- Check out:
+  - [NgRx Snippets](https://bit.ly/ngrx-vscode)
+  - [Angular Material Snippets](https://bit.ly/ng-material-vscode)

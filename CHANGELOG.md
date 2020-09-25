@@ -1,3 +1,22 @@
+<a name="3.0.0"></a>
+
+## 3.0.0 (2020-09-25)
+
+- Update README for new snippets
+- Add snippets for FASTElement:
+  - `fast-component` - Basic FASTElement Component
+  - `fast-cb` - `connectedCallback()` from FASTElement
+  - `fast-dcb` - `disconnectedCallback()` from FASTElement
+  - `fast-attr` - `@attr` decorator
+  - `fast-observable` - `@observable` decorator
+  - `fast-observable-notify` - `Observable.notify(...)`
+  - `fast-observable-track -` `Observable.track(...)`
+  - `fast-dispatch` - `$emit` to dispatch the custom event
+  - `fast-when` - `when`for conditional rendering
+- Add snippets for WebComponents/Generic:
+  - `wc-slot` - Define `<slot>`
+  - `wc-slot-named` - Define `<slot name="name">`
+
 <a name="2.0.0"></a>
 
 ## 2.0.0 (2020-08-07)
