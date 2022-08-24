@@ -202,7 +202,11 @@
       "\t}\n",
       "}",
       "",
-      "window.customElements.define('${TM_FILENAME_BASE/(.*)/${1:/downcase}/g}', ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/g});"
+      "const tagName = ${TM_FILENAME_BASE/(.*)/${1:/downcase}/g}",
+      "",
+      "if(!window.customElements.get(tagName)) {",
+      "\twindow.customElements.define(tagName, ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/g});",
+      "}"
     ],
     "description": "Basic Web Component"
   },
